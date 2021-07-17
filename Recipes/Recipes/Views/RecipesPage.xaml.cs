@@ -11,7 +11,14 @@ namespace Recipes.Views
         public RecipesPage(RecipesItemDTO dto)
         {
             InitializeComponent();
-            this.BindingContext = new RecipesPageVM(dto);
+            var vm = new RecipesPageVM(dto);
+            this.BindingContext = vm;
+
+            vm.PropertyChanged += (s, e) =>
+            {
+                if (e.PropertyName == nameof(vm.Process))
+                    Scroll.ForceLayout();
+            };
         }
     }
 }
