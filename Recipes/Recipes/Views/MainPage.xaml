@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Recipes.Views.MainPage"
+             Title="Главная">
+    <ContentPage.Content Title="Популярное">
+        <StackLayout Margin="20,20,20,20">
+            <Label FontSize="22" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Популярное"
+                                  FontAttributes="Bold"
+                                  FontSize="22"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <CollectionView ItemsSource="{Binding Items}"
+                        SelectionMode="Single"
+                        SelectedItem="{Binding SelectedItem}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10"
+                          RowDefinitions="Auto, *"
+                          ColumnDefinitions="Auto, *">
+                            <Image Grid.Column="1" 
+                               Source="{Binding ImageUrl}" 
+                               Aspect="AspectFill"
+                               HeightRequest="100"
+                               WidthRequest="60" />
+                            <Label Grid.Column="1" 
+                               Grid.Row="1"
+                               Text="{Binding Title}"
+                               FontAttributes="Bold" />
+                            <Label Grid.Column="1"
+                               Grid.Row="1"
+                               Margin="0, 25, 0, 0"
+                               Text="{Binding Desc}"
+                               VerticalOptions="End" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
