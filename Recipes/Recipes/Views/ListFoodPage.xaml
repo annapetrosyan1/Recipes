@@ -4,12 +4,31 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Recipes.Views.ListFoodPage">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Margin="20,20,20,20" Orientation="Vertical">
-                <Label Text="{Binding Title}" 
-                       FontAttributes="Bold"
-                       FontSize="22"></Label>
-            </StackLayout>
-        </ScrollView>
+        <StackLayout Margin="20,35,20,20">
+            <CollectionView ItemsSource="{Binding Items}"
+                        SelectionMode="Single"
+                        SelectedItem="{Binding SelectedItemList}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10"
+                          RowDefinitions="Auto, *"
+                          ColumnDefinitions="Auto, *">
+                            <Image Grid.RowSpan="2" 
+                               Source="{Binding ImageUrl}" 
+                               Aspect="AspectFill"
+                               HeightRequest="60"
+                               WidthRequest="60" />
+                            <Label Grid.Column="1" 
+                               Text="{Binding Title}"
+                               FontAttributes="Bold" />
+                            <Label Grid.Row="1" 
+                               Grid.Column="1" 
+                               Text="{Binding Desc}"
+                               VerticalOptions="End" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

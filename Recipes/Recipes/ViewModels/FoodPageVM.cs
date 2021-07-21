@@ -24,6 +24,40 @@ namespace Recipes.ViewModels
             }
         }
 
+        public string _content;
+        public string Content
+        {
+            get
+            {
+                return _content;
+            }
+            set
+            {
+                if (value != _content)
+                {
+                    _content = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Content)));
+                }
+            }
+        }
+
+        public string _process;
+        public string Process
+        {
+            get
+            {
+                return _process;
+            }
+            set
+            {
+                if (value != _process)
+                {
+                    _process = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Process)));
+                }
+            }
+        }
+
         ListFoodItemDTO _dto;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -40,8 +74,9 @@ namespace Recipes.ViewModels
             var food = await Service<IListFoodService>.GetService().LoadListFood(_dto.Id);
 
             Title = food.Title;
+            Content = food.Content;
+            Process = food.Process;
             //ImageUrl = recipes.ImageUrl;
-
         }
     }
 }

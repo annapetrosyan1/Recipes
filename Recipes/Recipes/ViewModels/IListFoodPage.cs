@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using Recipes.Domain.DTOs;
 
 namespace Recipes.ViewModels
 {
     public interface IListFoodPage
     {
-    }
+        void ShowFoodPage(ListFoodItemDTO item);
+    };
 }

@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace Recipes.Views
 {
-    public partial class FoodPage : ContentPage, IListFoodPage
+    public partial class FoodPage : ContentPage, IFoodPage
     {
         public FoodPage(ListFoodItemDTO dto)
         {

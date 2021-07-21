@@ -43,7 +43,7 @@ namespace Recipes.Service
 
                 new RecipesItemDTO
                 {
-                    Id = 3,
+                    Id = 19,
                     Title = "Фунчоза с креветками",
                     Desc = "Фунчоза — блюдо корейской, китайской и японской кухни, представляющее собой стеклянную лапшу с соусами и приправами.",
                     ImageUrl = "https://i.pinimg.com/originals/f1/d8/f5/f1d8f581c8fd9e1508b07b24f82dd2a2.jpg",
@@ -58,7 +58,7 @@ namespace Recipes.Service
 
                 new RecipesItemDTO
                 {
-                    Id = 4,
+                    Id = 20,
                     Title = "Паста Карбонара",
                     Desc = "Карбонара – популярное блюдо традиционной кухни Италии. Представляет собой пасту, заправленную особым мясным соусом.",
                     ImageUrl = "https://juegoscocinarpasteleria.org/wp-content/uploads/2020/04/Receta-de-espagueti-a-la-carbonara.jpg",
@@ -71,7 +71,7 @@ namespace Recipes.Service
 
                 new RecipesItemDTO
                 {
-                    Id = 5,
+                    Id = 21,
                     Title = "Хачапури по-аджарски",
                     Desc = "Хачапури по-аджарски сразу из печи - ароматные, с растопленным сыром сулугуни и нежным хрустящим краешком.",
                     ImageUrl = "https://kurmyshi.media/wp-content/uploads/2020/11/IMG_8810-1024x676.jpg",

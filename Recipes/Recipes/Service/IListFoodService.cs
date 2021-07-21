@@ -7,7 +7,7 @@ namespace Recipes.Service
 {
     public interface IListFoodService
     {
-        Task<List<ListFoodItemDTO>> LoadListListFood();
+        Task<List<ListFoodItemDTO>> LoadListListFood(int CategoryId);
         Task<ListFoodDTO> LoadListFood(int id);
     }
 

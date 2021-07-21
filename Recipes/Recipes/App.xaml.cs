@@ -11,6 +11,7 @@ namespace Recipes
             Service<IRecipesService>.RegisterService(new FakeRecipesService());
             Service<ICategoriesService>.RegisterService(new FakeCategoriesService());
             Service<IListFoodService>.RegisterService(new FakeListFoodService());
+            Service<IFoodService>.RegisterService(new FakeFoodService());
             InitializeComponent();
             MainPage = new AppShell();
         }

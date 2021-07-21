@@ -43,7 +43,7 @@ namespace Recipes.Service
 
                 new CategoriesItemDTO
                 {
-                    Id = 5,
+                    Id = 4,
                     Title = "Горячие блюда",
                     Desc = "Вкусные рецепты вторых блюд на скорую руку или для праздничного стола",
                     ImageUrl = "https://kartinkin.com/uploads/posts/2021-03/1617194355_23-p-steik-iz-svinini-krasivo-28.jpg"
@@ -52,7 +52,7 @@ namespace Recipes.Service
 
                 new CategoriesItemDTO
                 {
-                    Id = 6,
+                    Id = 5,
                     Title = "Десерты",
                     Desc = "На десерт возложена ответственная роль — завершать трапезу",
                     ImageUrl = "https://im0-tub-ru.yandex.net/i?id=93004a59428eeab7349a8616a6f01cb9-l&n=13"
@@ -61,7 +61,7 @@ namespace Recipes.Service
 
                 new CategoriesItemDTO
                 {
-                    Id = 7,
+                    Id = 6,
                     Title = "Торты",
                     Desc = "Торт – сладкий пирог, обычно состоящий из нескольких слоев(коржей и кремовых или джемовых прослоек)",
                     ImageUrl = "https://kamelenta.ru/files/1500/1705/15917043827801.jpg"
@@ -70,7 +70,7 @@ namespace Recipes.Service
 
                 new CategoriesItemDTO
                 {
-                    Id = 8,
+                    Id = 7,
                     Title = "Вегетарианское",
                     Desc = "Разнообразие вегетарианской еды: рецепты, способные покорить желудки и сердца",
                     ImageUrl = "https://ichef.bbci.co.uk/news/640/cpsprodpb/41F7/production/_105278861_gettyimages-855098134.jpg"
