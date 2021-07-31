@@ -6,9 +6,16 @@
     <ScrollView x:Name="Scroll">
         <StackLayout Margin="20,20,20,20"
                      VerticalOptions="StartAndExpand">
-            <Label Text="{Binding Title}"
+            <Grid>
+                <Label Text="{Binding Title}"
                    FontAttributes="Bold"
                    FontSize="22"/>
+                <Button HorizontalOptions="End"
+                   Text="В избранное"
+                   Clicked="OnButtonClicked"
+                   CornerRadius="20"
+                   BackgroundColor="LightSkyBlue"/>
+            </Grid>
             <Frame BorderColor="LightBlue"
                    CornerRadius="10"
                    HasShadow="True">

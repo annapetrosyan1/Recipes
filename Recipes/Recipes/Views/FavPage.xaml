@@ -5,8 +5,7 @@
              Title="Избранное">
     
     <StackLayout>
-        <Button Text="Learn more"
-                    Clicked="OnButtonClicked" />
+        
         </StackLayout>
    
 </ContentPage>
